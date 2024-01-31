@@ -14,7 +14,7 @@
     <div class ="container">
                 <h1>add members</h1>
                 <hr>
-                <form action="/add_members" method="post">
+                <form action="/add_members/" method="post">
                    {% csrf_token %}
                       {{form.as_p}}
                       <input type='submit' value="create student">

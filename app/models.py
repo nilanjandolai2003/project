@@ -19,7 +19,7 @@ class student(models.Model):
     role=models.ForeignKey(Role,on_delete=models.CASCADE)
     phone=models.IntegerField()
     join_date=models.DateTimeField()
-    id = models.CharField(max_length=20, unique=True, editable=False,primary_key=True)
+    id = models.CharField(max_length=20,unique=True, editable=False,primary_key=True)
 
      
     def __str__(self):
